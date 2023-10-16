@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Daily Run Rate</title>
+</head>
+<body>
+    <h1 class="header">Add New</h1>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Actions</th>
+                <th>ID</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Months/Years</th>
+                <th>Dates Excluded</th>
+                <th>Number of Days</th>
+                <th>Lead Count</th>
+                <th>Expected DRR</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows 1-6 (same functionality in each row) -->
+            <tr>
+                <td>
+                    <button class="green-button" id="save-button-1">Save</button>
+                    <button class="red-button" id="cancel-button-1">Cancel</button>
+                </td>
+                <td><b>1</b></td>
+                <td>
+                    <input type="date" class="date-input" id="start-date-1">
+                </td>
+                <td>
+                    <input type="date" class="date-input" id="end-date-1">
+                </td>
+                <td><span class="month-year" id="month-year-1"></span></td>
+                <td>
+                    <input type="text" class="text-input" id="excluded-dates-1">
+                    <button class="exclude-button" id="exclude-button-1">Exclude Date</button>
+                </td>
+                <td><span class="num-days" id="num-days-1"></span></td>
+                <td>
+                    <input type="number" class="number-input" id="num-leads-1">
+                </td>
+                <td><span class="expected-drr" id="expected-drr-1"></span></td>
+                <td></td>
+            </tr>
+            <!-- Rows 2-6 (copy the row structure and change ID accordingly) -->
+            <!-- Row 2 -->
+            <tr>
+                <td>
+                    <button class="green-button" id="save-button-2">Save</button>
+                    <button class="red-button" id="cancel-button-2">Cancel</button>
+                </td>
+                <td><b>2</b></td>
+                <td>
+                    <input type="date" class="date-input" id="start-date-2">
+                </td>
+                <td>
+                    <input type="date" class="date-input" id="end-date-2">
+                </td>
+                <td><span class="month-year" id="month-year-2"></span></td>
+                <td>
+                    <input type="text" class="text-input" id="excluded-dates-2">
+                    <button class="exclude-button" id="exclude-button-2">Exclude Date</button>
+                </td>
+                <td><span class="num-days" id="num-days-2"></span></td>
+                <td>
+                    <input type="number" class="number-input" id="num-leads-2">
+                </td>
+                <td><span class="expected-drr" id="expected-drr-2"></span></td>
+                <td></td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td>
+                    <button class="green-button" id="save-button-3">Save</button>
+                    <button class="red-button" id="cancel-button-3">Cancel</button>
+                </td>
+                <td><b>3</b></td>
+                <td>
+                    <input type="date" class="date-input" id="start-date-3">
+                </td>
+                <td>
+                    <input type="date" class="date-input" id="end-date-3">
+                </td>
+                <td><span class="month-year" id="month-year-3"></span></td>
+                <td>
+                    <input type="text" class="text-input" id="excluded-dates-3">
+                    <button class="exclude-button" id="exclude-button-3">Exclude Date</button>
+                </td>
+                <td><span class="num-days" id="num-days-3"></span></td>
+                <td>
+                    <input type="number" class="number-input" id="num-leads-3">
+                </td>
+                <td><span class="expected-drr" id="expected-drr-3"></span></td>
+                <td></td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td>
+                    <button class="green-button" id="save-button-4">Save</button>
+                    <button class "red-button" id="cancel-button-4">Cancel</button>
+                </td>
+                <td><b>4</b></td>
+                <td>
+                    <input type="date" class="date-input" id="start-date-4">
+                </td>
+                <td>
+                    <input type="date" class="date-input" id="end-date-4">
+                </td>
+                <td><span class="month-year" id="month-year-4"></span></td>
+                <td>
+                    <input type="text" class="text-input" id="excluded-dates-4">
+                    <button class="exclude-button" id="exclude-button-4">Exclude Date</button>
+                </td>
+                <td><span class="num-days" id="num-days-4"></span></td>
+                <td>
+                    <input type="number" class="number-input" id="num-leads-4">
+                </td>
+                <td></td>
+            </tr>
+            <!-- Row 5 -->
+            <tr>
+                <td>
+                    <button class="green-button" id="save-button-5">Save</button>
+                    <button class="red-button" id="cancel-button-5">Cancel</button>
+                </td>
+                <td><b>5</b></td>
+                <td>
+                    <input type="date" class="date-input" id="start-date-5">
+                </td>
+                <td>
+                    <input type="date" class="date-input" id="end-date-5">
+                </td>
+                <td><span class="month-year" id="month-year-5"></span></td>
+                <td>
+                    <input type="text" class="text-input" id="excluded-dates-5">
+                    <button class="exclude-button" id="exclude-button-5">Exclude Date</button>
+                </td>
+                <td><span class="num-days" id="num-days-5"></span></td>
+                <td>
+                    <input type="number" class="number-input" id="num-leads-5">
+                </td>
+                <td></td>
+            </tr>
+            <!-- Row 6 -->
+            <tr>
+                <td>
+                    <button class="green-button" id="save-button-6">Save</button>
+                    <button class="red-button" id="cancel-button-6">Cancel</button>
+                </td>
+                <td><b>6</b></td>
+                <td>
+                    <input type="date" class="date-input" id="start-date-6">
+                </td>
+                <td>
+                    <input type="date" class="date-input" id="end-date-6">
+                </td>
+                <td><span class="month-year" id="month-year-6"></span></td>
+                <td>
+                    <input type="text" class="text-input" id="excluded-dates-6">
+                    <button class="exclude-button" id="exclude-button-6">Exclude Date</button>
+                </td>
+                <td><span class="num-days" id="num-days-6"></span></td>
+                <td>
+                    <input type="number" class="number-input" id="num-leads-6">
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
